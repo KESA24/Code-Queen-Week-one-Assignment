@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Table and Form</title>
+        <style>
+        *{
+            font-family: sans-serif;
+        }
+            .contents{
+                    border-collapse: collapse;
+                    margin: 25px 0;
+                    font-size: 0.9em;
+                    min-width: 400px;
+                    border-radius: 5px 5px 0 0;
+                    overflow: hidden;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+                
+            }
+            .contents tr th {
+                background-color: aqua;
+                color: white;
+                text-align: left;
+                font-weight: bold;
+
+            }
+            .contents th,
+            .contents td{
+                padding: 12px 15px;
+            }
+            .contents tbody tr{
+                border-bottom: 1px solid grey;
+            }
+            .contents tbody tr:nth-of-type(even){
+                background-color: lightgray;
+            }
+            .contents tbody tr:last-of-type{
+                border-color: aqua;
+            }
+
+          
+            
+        </style>
+
+    </head>
+    <body>
+        <section class = "contents">
+        <h1>FRIENDS</h1>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Name </th>
+                <th>Email Address </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nabwire Shona</td>
+                <td>smnabwire@gmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Isaac Oluk</td>
+                <td>isaac2016@gmail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Alex Ssewanyana</td>
+                <td>salex@gmail.com</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Gloria Lamunu</td>
+                <td>glorial@gmail.com</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Charity Esenu</td>
+                <td>Ace@gmail.com</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Asamo Elizabeth</td>
+                <td>asamoe@gmail.com</td>
+            </tr>
+         </table>
+        </section>
+        <section>
+            <h3> Register Here </h3>
+            <form>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="Email">Email Address:</label><br>
+                <input type="email" id="Email" name="Email"><br>
+                <label for="Pass">Password:</label><br>
+                <input type="password" id="Pass" name="Pass">
+            </form>  
+        </section>
+
+    </body>
+</html>
